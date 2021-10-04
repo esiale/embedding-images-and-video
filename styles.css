@@ -9,7 +9,6 @@
 body {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
-  font-size: 10px;
 }
 
 .wrapper {
@@ -159,7 +158,6 @@ header img {
 .video-panel-options {
   display: flex;
   align-items: center;
-  font-size: 0.9rem;
   font-weight: 500;
 }
 
@@ -171,6 +169,70 @@ header img {
 .video-panel-options span {
   margin-left: 5px;
   margin-right: 20px;
+}
+
+.video-info-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.video-info-top-author {
+  display: flex;
+  gap: 15px;
+}
+
+.video-info-top-author-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.video-info-top-author-text-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.video-info-top-author-text-subs {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.video-info-top-author-picture img {
+  border-radius: 50%;
+}
+
+.video-info-top-sub {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.video-info-top-sub button {
+  border: 0;
+  background-color: hsl(0, 0%, 93%);
+  color: hsl(0, 0%, 50%);
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95rem;
+  padding: 9px 20px;
+  border-radius: 2px;
+}
+
+.video-info-top-sub img {
+  width: 24px;
+  height: 24px;
+}
+
+.video-info-top-author-text-desc {
+  font-size: 0.95rem;
+  margin: 15px 0 7px 0;
+}
+
+.video-info-top-author-text-more {
+  color: hsl(0, 0%, 40%);
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .sidebar {
