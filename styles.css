@@ -13,7 +13,6 @@ body {
 }
 
 .wrapper {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +31,7 @@ header {
   right: 0;
   padding: 0 25px;
   z-index: 1;
+  gap: 30px;
 }
 
 header img {
@@ -110,8 +110,9 @@ header img {
   width: 100%;
   height: 100%;
   max-width: 1650px;
-  margin-top: 160px;
+  margin-top: 80px;
   margin-left: 25px;
+  margin-right: 25px;
   gap: 30px;
 }
 
@@ -350,8 +351,49 @@ header img {
 
 .sidebar {
   display: flex;
-  background-color: purple;
+  flex-direction: column;
+  gap: 10px;
   width: 400px;
-  height: 100%;
-  margin-right: 25px;
+}
+
+.sidebar-suggestion {
+  display: flex;
+  width: 360px;
+}
+
+.sidebar-suggestion img {
+  display: flex;
+  height: 94px;
+  width: 168px;
+}
+
+.sidebar-suggestion-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.sidebar-suggestion-content-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.sidebar-suggestion-content-name,
+.sidebar-suggestion-content-views-date {
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 40%);
+}
+
+@media screen and (max-width: 1050px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .sidebar-suggestion {
+    width: 100%;
+  }
 }
